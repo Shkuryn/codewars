@@ -14,6 +14,7 @@ Example
 
 def duplicate_count(text)
   text = text.downcase
+   // ('a'..'z').count { |c| text.downcase.count(c) > 1 }
   return   text.chars.uniq.count { |char| text.count(char) > 1 }
 end
 
